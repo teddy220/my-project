@@ -1,0 +1,148 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    font-size: 20px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.cv-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+  background: #2c3e50;
+  color: white;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #ecf0f1;
+}
+
+.sidebar h2 {
+  margin: 10px 0 5px;
+}
+
+.sidebar p {
+  font-size: 15px;
+  color: #ccc;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.main-content h3 {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  color: #2c3e50;
+}
+
+.skills {
+  list-style: square inside;
+  padding-left: 20px;
+}
+
+.job {
+  margin-top: 20px;
+}
+
+.job h4 {
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+.job span {
+  font-size: 14px;
+  color: #777;
+}
+
+.job p {
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sidebar h2 {
+    font-size: 20px;
+  }
+
+  .sidebar p {
+    font-size: 14px;
+  }
+
+  .contact-info li {
+    font-size: 13px;
+  }
+
+  .main-content h3 {
+    font-size: 18px;
+  }
+
+  .job h4 {
+    font-size: 16px;
+  }
+}
